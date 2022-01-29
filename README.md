@@ -34,3 +34,101 @@ in that case you can used git diff command
 
 ## Don't commit you project unnecessay, first confirm it is fine then commmit
 - ***git log -p -2***   it gives you the details of your last 2 commit  ***press 'q' for exit***
+
+
+## Git Remove Command
+  - ***git rm --cached waster.html*** it remove the waster.html from the commit
+  - ***git rm waster.html*** it delete this file and also remove from the working tree
+  - ***git rm -f waster.html*** it delete this file forcely
+
+## .gitignore file
+  - create using ***touch .gitignore*** 
+  - .gitignore file avoid to push all the files which are written in the .gitignore file
+  ```
+  node modules
+  ```
+## for creating new branch you can use the command 
+```
+git branch feature1
+```
+## ***git branch*** it gives you the list of all the branch
+
+- generally we are always on master branch
+- but IF I want to swith to other branch 
+```
+git checkout feature1
+```
+## Git merge Command
+  - First of all you remeber our main branch is our master branch
+  - Suppose you create a new branch 
+  ```
+  git branch feature2
+  ```
+  - If you are working on any project which is very big and very important then try to change on the branch
+  - If you have done all the changes in your branch and you want to merge then 
+  - first you have to go in the master branch
+  ```
+  git checkout master
+  ```
+  - then write
+  ```
+  git merge feature2
+  ```
+  
+## IF you create any new branch from master 
+- in that branch you can do any thing like crating new file , updting something in the existing file 
+- but after making all the changes 
+- don't forget to commit
+
+### One more interesting command
+- this command done It create a new branch and directly move me to in that branch
+```
+git checkout -b feature5
+```
+
+## Few more commands
+```
+git remote add origin 'https://kjfdkfjdf'
+git remote
+git remote -v
+git push origin master
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
