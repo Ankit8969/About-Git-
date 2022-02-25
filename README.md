@@ -94,10 +94,10 @@ git remote -v
 git push origin master
 ```
 
-
-
-
-
+## Get all you previous Commit
+```
+git log --reflog
+```
 
 
 
